@@ -4,52 +4,46 @@ using namespace std;
 
 int main()
 {
-    int x, y;
-    x = 0;
+    char x;
+    int  y;
     y = 1;
-    while(y == 1)
+    cin>>x;
+    do
     {
-        cin>>x;
-        if(x == 0)
+        switch(x)
         {
-            cout<<"zero\n";
-        }
-        if(x == 1)
-        {
-            cout<<"one\n";
-        }
-        if(x == 2)
-        {
-            cout<<"two\n";
-        }
-        if(x == 3)
-        {
-            cout<<"three\n";
-        }
-        if(x == 4)
-        {
-            cout<<"four\n";
-        }
-        if(x == 5)
-        {
-            cout<<"five\n";
-        }
-        if(x == 6)
-        {
-            cout<<"six\n";
-        }
-        if(x == 7)
-        {
-            cout<<"seven\n";
-        }
-        if(x == 8)
-        {
-            cout<<"eight\n";
-        }
-        if(x == 9)
-        {
-            cout<<"nine\n";
-        }
-    }
+            case '0':    
+                cout<<"zero\n";
+                break;
+            case '1':
+                cout<<"one\n";
+                break;
+            case '2':
+                cout<<"two\n";
+                break;
+            case '3':
+                cout<<"three\n";
+                break;
+            case '4':
+                cout<<"four\n";
+                break;
+            case '5':
+                cout<<"five\n";
+                break;
+            case '6':
+                cout<<"six\n";
+                break;
+            case '7':
+                cout<<"seven\n";
+                break;
+            case '8':
+                cout<<"eight\n";
+                break;
+            case '9':
+                cout<<"nine\n";
+                break;
+            
+        } 
+    } while(cin>>x);
     return 0;
 }
